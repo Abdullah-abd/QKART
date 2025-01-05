@@ -1,0 +1,145 @@
+.container{
+  width: 100vw;
+}
+.search {
+  min-width: 24rem;
+  position: relative;
+  left: 4rem;
+}
+
+.hero {
+  background-image: url("../assets/hero_image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-grid {
+  width: 100%;
+}
+
+.hero-heading {
+  color: #fff;
+  font-size: 1.5rem;
+  width: 80%;
+  position: relative;
+  left: 1rem;
+}
+
+.hero-highlight {
+  color: #212121;
+  font-weight: 700;
+  background: #ffb825;
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.search-mobile {
+  display: block !important;
+}
+
+.search-desktop {
+  display: none !important;
+}
+.title {
+  color: #00a278;
+}
+
+.secondary-action {
+  padding: 1rem 0;
+}
+.button {
+    background-color: #00a278 !important;
+}
+
+.button:hover {
+    background-color: #00845c !important;
+}
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3; /* Light gray background border */
+  border-top: 6px solid #45c09f; /* Blue foreground border */
+  border-radius: 50%; /* Makes it circular */
+  animation: spin 1s linear infinite; /* Infinite spinning animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Default Layout */
+.logged-in {
+  display: flex;
+  flex-direction: column; /* Stacks sections by default */
+  margin: 0 auto;
+  width: 100%; /* Adjust width as needed */
+}
+
+.products-section {
+  flex: 1;
+  margin-right: 0;
+}
+
+.cart-section {
+  display: none;
+}
+.logged-in .cart-section {
+  margin-top: 1rem;
+  display: block;
+}
+
+/* For larger screens */
+/* @media (min-width: 768px) {
+  
+} */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    justify-content: flex-end;
+    height: 20rem;
+    padding-right: 8rem;
+  }
+  .hero-heading {
+    position: static;
+    font-size: 3rem;
+    width: 50%;
+  }
+  .search-mobile {
+    display: none !important;
+  }
+  .search-desktop {
+    display: block !important;
+  }
+  .main-container {
+    flex-direction: row; /* Align sections horizontally */
+  }
+
+  .products-section {
+    flex: 3;
+  }
+
+  .cart-section {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+}

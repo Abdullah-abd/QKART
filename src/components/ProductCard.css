@@ -1,0 +1,52 @@
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-actions {
+    margin-bottom: 1rem;
+}
+
+.card-button {
+    text-transform: none;
+    font-weight: 600;
+}
+.title {
+    color: #00a278;
+  }
+  
+  .secondary-action {
+    padding: 1rem 0;
+  }
+  
+  .link {
+    font-weight: 700;
+    text-decoration: none;
+    color: #45c09f;
+  }
+  
+  .link:focus {
+    color: #00a278;
+  }
+  
+  .link:active {
+    color: #45c09f;
+  }
+  
+  .link:visited {
+    color: #45c09f;
+  }
+  
+  .button {
+      background-color: #00a278 !important;
+      width: 100%;
+  }
+  
+  .button:hover {
+      background-color: #00845c !important;
+  }
+ .cost{
+    color: #45c09f
+ } 
